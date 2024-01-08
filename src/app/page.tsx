@@ -7,7 +7,7 @@ export default function Home() {
       <div className='w-full bg-black bg-opacity-25 h-[765px] relative'>
         <div className='w-full bg-black absolute top-0 h-[765px] opacity-75 z-10'> </div>
         <Image
-          src='/images/bg-1.jpg'
+          src='/images/1 Banner.jpg'
           alt="thaidestinaiton"
           width={0}
           height={0}
@@ -61,7 +61,7 @@ export default function Home() {
           <div className='grid grid-cols-2 pt-60 z-20'>
             <div className='1 '>
               <Image
-                src='/images/bg-1.jpg'
+                src='/images/2 Fonny.png'
                 alt="thaidestinaiton"
                 width={0}
                 height={0}
@@ -166,7 +166,7 @@ export default function Home() {
             </div>
             <div className='2 mt-20'>
               <Image
-                src='/images/bg-1.jpg'
+                src='/images/4 Fonny.jpg'
                 alt="thaidestinaiton"
                 width={0}
                 height={0}
@@ -193,7 +193,7 @@ export default function Home() {
               <div className='text-[100px]'>Online </div>
               <div className='text-[100px]'>Presence</div>
               <div className='text-[30px] max-w-[600px]'>In the digital age, personal image often extends to one's online presence.</div>
-              <div className='text-base text-center mt-10 max-w-[700px]'>Online presence refers to an individual’s representation on the internet.
+              <div className='text-lg text-center mt-36 leading-9 max-w-[700px]'>Online presence refers to an individual’s representation on the internet.
                 It encompasses digital footprints, including social media profiles,
                 personal websites, and online interactions. A robust online presence is
                 vital in <span className='font-bold'>the digital age</span>, influencing personal and professional
@@ -205,21 +205,15 @@ export default function Home() {
             </div>
             <div className='2 mt-20'>
               <Image
-                src='/images/bg-1.jpg'
+                src='/images/6 Fonny.jpg'
                 alt="thaidestinaiton"
                 width={0}
                 height={0}
                 sizes="100vw"
                 quality={100}
-                className="w-full  object-cover "
+                className="w-full h-[800px] object-cover "
                 priority
               />
-              <div className='text-lg text-center pt-10 text-white'>  Power dressing has become integral to presentations as it exudes confidence
-                and professionalism, influencing how individuals are perceived.
-                Well-chosen attire can enhance credibility, command attention,
-                and communicate a strong, assertive presence during presentations.
-                The strategic use of power dressing aligns with the notion that appearance plays a significant role in effective communication and leadership.
-              </div>
             </div>
           </div>
         </div>
@@ -229,8 +223,157 @@ export default function Home() {
         <div className='text-[80px] font-bold'>Persuasive Storytelling</div>
         <div className='text-[30px]'>Building and maintaining a positive reputation is </div>
         <div className='text-[30px]'>important for success in various areas of life. </div>
-        
+        <div className='pt-20 relative'>
+          <Image
+            src='/images/7.jpg'
+            alt="thaidestinaiton"
+            width={0}
+            height={0}
+            sizes="100vw"
+            quality={100}
+            className="w-full  object-cover relative "
+            priority
+          />
+          <div className='absolute top-[10rem] mt-20 max-w-[500px] left-10 mx-auto text-center text-white z-20'>
+            <div className='text-[50px] '>Adaptability to Audience</div>
+            <div className='text-2xl mt-20 leading-10'>
+              In summary, persuasive storytelling is a skill that
+              involves creating a narrative that captivates,
+              engages, and convinces your audience.
+              By incorporating emotional elements, establishing
+              a compelling plot, showcasing real-world examples,
+              and keeping your story concise and relevant,
+              you can leverage the power of storytelling
+              to enhance the persuasiveness
+              of your communication.
+
+            </div>
+          </div>
+
+        </div>
       </div>
+
+      <div className='w-full bg-black h-auto opacity-90 pb-20'>
+        <div className='z-10 max-w-[1366px] mx-auto text-white'>
+          <div className='text-[80px] pt-20 text-center'>Pitching Syllabus</div>
+          <div className='text-[30px] mt-10 text-center'>A comprehensive guide to mastering the art of persuasive communication</div>
+          <div className='grid-cols-2 grid mt-20 gap-20'>
+            <div>
+              <Image
+                src='/images/8 Fonny.jpg'
+                alt="thaidestinaiton"
+                width={0}
+                height={0}
+                sizes="100vw"
+                quality={100}
+                className="w-full h-auto object-cover "
+              />
+            </div>
+            <div>
+              <Image
+                src='/images/9 Fonny.jpg'
+                alt="thaidestinaiton"
+                width={0}
+                height={0}
+                sizes="100vw"
+                quality={100}
+                className="w-full h-auto object-cover "
+              />
+            </div>
+          </div>
+          <div className='text-center text-[28px] pt-20'>
+            The Pitching Mastery Instrument is a comprehensive guide to mastering the art of persuasive
+            communication. By combining clarity of message, persuasive storytelling, audience
+            understanding, confident delivery, and visual appeal, individuals can elevate their pitches and
+            increase their chances of success in diverse professional settings.
+
+          </div>
+        </div>
+      </div>
+
+      <div className='w-full pb-20 h-auto relative'>
+        <div className='absolute inset-0 bg-black opacity-70 z-10'></div>
+        <div className='max-w-[1366px] mx-auto text-white relative z-20'>
+          <div className='text-center text-[40px] pt-20'>What our student say</div>
+          <div className='grid grid-cols-2 mt-20 gap-20'>
+            <div className='relative'>
+              <Image
+                src='/images/10 Pooklook.jpg'
+                alt="thaidestinaiton"
+                width={0}
+                height={0}
+                sizes="100vw"
+                quality={100}
+                className="w-full h-auto object-cover "
+                priority
+              />
+              <div className='absolute top-[14rem] left-[19rem]'>
+                <Image
+                  src='/images/12 Youtube logo.jpg'
+                  alt="thaidestinaiton"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  quality={100}
+                  className="w-[100px] h-auto object-cover "
+                  priority
+                />
+              </div>
+            </div>
+            <div className='relative'>
+              <Image
+                src='/images/11 Kru Ngoh.jpg'
+                alt="thaidestinaiton"
+                width={0}
+                height={0}
+                sizes="100vw"
+                quality={100}
+                className="w-full h-auto object-cover "
+                priority
+              />
+              <div className='absolute top-[14rem] left-[19rem]'>
+                <Image
+                  src='/images/12 Youtube logo.jpg'
+                  alt="thaidestinaiton"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  quality={100}
+                  className="w-[100px] h-auto object-cover "
+                  priority
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className='max-w-[1366px] mx-auto mt-20 pb-20'>
+        <div className='flex justify-center items-center flex-col relative'>
+          <div>
+            <Image
+              src='/images/13 Testimonial.jpg'
+              alt="thaidestinaiton"
+              width={0}
+              height={0}
+              sizes="100vw"
+              quality={100}
+              className="w-[150px] h-auto object-cover "
+              priority
+            />
+          </div>
+
+          <div className='font-bold text-[20px] mt-10'>Pnoop Apimongkoldhorn</div>
+          <div className='text-[18px] mt-5'>IT Developer</div>
+          <div className='mt-10 text-center max-w-[800px] text-[28px]'>
+            We strive to protect oceans by raising
+            awareness about their importance to human survival.
+            Give us five minutes each week and we will
+            give you a summary of the latest ocean news. Advocacy Actions. Make a Difference. Week in Review..
+          </div>
+        </div>
+      </div>
+
 
     </div>
   )
