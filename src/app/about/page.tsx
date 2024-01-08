@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import Header from '../header'
 import { useRef } from 'react'
+import Footer from '../footer';
 
 export default function About() {
 
@@ -239,7 +240,16 @@ export default function About() {
                         </div>
                     </div>
                 </div>
+                <div className='bg-black text-white pt-20 pb-20 relative'>
+                    <div className='w-full bg-black absolute top-0  opacity-75 z-10'></div>
+                    <Footer />
+                </div>
+
             </div>
+
+
+
+
 
         </div>
     )
