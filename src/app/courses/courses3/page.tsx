@@ -7,12 +7,11 @@ export default function Courses3() {
 
   const router = useRouter()
 
-  const mockInstruclors = [
-    '• Lorem ipsum dolor sit amet consectetur adipisicing elit. Est debitis cumque tempora, voluptate excepturi quas officiis, sed deserunt aliquid, voluptas alias,',
-    '• Lorem ipsum dolor sit amet consectetur adipisicing elit. Est debitis cumque tempora, voluptate excepturi quas officiis, sed deserunt aliquid, voluptas alias,',
-    '• Lorem ipsum dolor sit amet consectetur adipisicing elit. Est debitis cumque tempora, voluptate excepturi quas officiis, sed deserunt aliquid, voluptas alias,',
-    '• Lorem ipsum dolor sit amet consectetur adipisicing elit. Est debitis cumque tempora, voluptate excepturi quas officiis, sed deserunt aliquid, voluptas alias,',
-    '• Lorem ipsum dolor sit amet consectetur adipisicing elit. Est debitis cumque tempora, voluptate excepturi quas officiis, sed deserunt aliquid, voluptas alias,',
+  const textPresentation = [
+    `• Understanding the Story : Understand the type of work you want to present. Creating an understanding of audience needs`,
+    '• Planning and creating content : Systematic presentation planning. Creating meaningful and interesting content',
+    '• Presentation skills : Using language that is easy to understand. Creating a memorable presentation experience',
+    '• Time management and communication : Planning a presentation for a specified period of time Using presentation techniques to capture attention',
   ]
 
   const selectCouese = (e: any) => {
@@ -85,20 +84,41 @@ export default function Courses3() {
           <div className="max-w-[1200px] mx-auto mt-20 px-4 md:px-0">
             <div className="text-2xl md:text-[34px] font-bold didot">About</div>
             <div className="text-2xl md:text-3xl text- mt-10 kanda">
-              <span className="text-2xl md:text-3xl font-bold pr-5 leading-10 kanda">"Present to Millons"</span>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia repudiandae voluptate assumenda et eius, quasi incidunt provident saepe illum aliquid reiciendis rerum quidem atque quia quas totam blanditiis at ex!
+              <span className="text-2xl md:text-3xl pr-3 leading-10 kanda">The "Presentation Mastery"</span>
+              course is about learning presentation skills with expertise. That helps build confidence and promotes effective communication in presenting your information or ideas.
+              In the same place, “Business Image Makeover” focuses on developing a confident and valuable business image. This helps to create a reliable and modern image. Your business perspective is customized to match current trends and changes in the industry.
             </div>
             <div className="text-2xl md:text-3xl mt-14 kanda">
-              <span className="font-bold pr-5 kanda">"Present to Millons"</span>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia repudiandae voluptate assumenda et eius, quasi incidunt provident saepe illum aliquid reiciendis rerum quidem atque quia quas totam blanditiis at ex!
+              Both courses will help you grow in both your presentation skills and your business landscape to stand out in today’s robust market.
             </div>
             <hr className="mt-20 border-2"></hr>
 
             <div className="mt-20 text-xl md:text-3xl">
-              <div className="font-bold text-2xl md:text-3xl">Instruclors</div>
-              {mockInstruclors.map((item: any, index: number) => (
-                <div key={index} className="mt-10 text-2xl kanda">{item}</div>
+              <div className="font-bold text-2xl md:text-3xl didot">Instruclors</div>
+              <div className="text-2xl md:text-3xl mt-5 kanda">Improving your look is a multifaceted process that is not limited to modifying your appearance. It is included in
+                the Strengthen various aspects of presentation and behavior to create a positive, authentic, and impactful
+                impression More Here are some key ways to improve your look
+              </div>
+              <div className="font-bold text-2xl md:text-3xl mt-20 didot">PRESENTATION MASTERY</div>
+              {textPresentation.map((item: any, index: number) => (
+                <div key={index} className="mt-10 text-2xl md:text-3xl kanda">{item}</div>
               ))}
+              <div className="font-bold text-2xl md:text-3xl mt-20 didot">BUSINESS IMAGE MAKE OVER</div>
+              <div className='mt-10 text-2xl md:text-3xl kanda'>• Personal image adjustment</div>
+              <div className='mt-3 text-2xl md:text-3xl kanda'>Build a strong, authentic personal brand that matches your business’s values, advantages, and goals.</div>
+              <div className='mt-10 text-2xl md:text-3xl kanda'>• Clothing consultation</div>
+              <div className='mt-3 text-2xl md:text-3xl kanda'>Be sure to choose clothing in a way that is consistent with the individual and the expectations of the business
+                environment.<br></br>
+                Evaluate your current clothing. Identify the main items of clothing that you must have.
+              </div>
+              <div className='mt-10 text-2xl md:text-3xl kanda'>• Take them shopping for clothes.</div>
+              <div className='mt-3 text-2xl md:text-3xl kanda'>Choosing a clothing store with the right collection Give advice on changing the shape and style of clothing.
+                Promote a confident and fun buying experience.
+              </div>
+              <div className='mt-10 text-2xl md:text-3xl kanda'>• Continuous improvement plan.</div>
+              <div className='mt-3 text-2xl md:text-3xl kanda'>Promote continuous improvement to suit your own changing context and professional environment.
+                Regular self-assessment and feedback</div>
+
             </div>
             <div className="bg-white mt-24 pb-20 px-4">
               <div className="text-center underline pt-5 pb-10 text-5xl  didot">Price</div>

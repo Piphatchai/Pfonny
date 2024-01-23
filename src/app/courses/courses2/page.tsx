@@ -8,11 +8,13 @@ export default function Courses2() {
   const router = useRouter()
 
   const mockInstruclors = [
-    '• Lorem ipsum dolor sit amet consectetur adipisicing elit. Est debitis cumque tempora, voluptate excepturi quas officiis, sed deserunt aliquid, voluptas alias,',
-    '• Lorem ipsum dolor sit amet consectetur adipisicing elit. Est debitis cumque tempora, voluptate excepturi quas officiis, sed deserunt aliquid, voluptas alias,',
-    '• Lorem ipsum dolor sit amet consectetur adipisicing elit. Est debitis cumque tempora, voluptate excepturi quas officiis, sed deserunt aliquid, voluptas alias,',
-    '• Lorem ipsum dolor sit amet consectetur adipisicing elit. Est debitis cumque tempora, voluptate excepturi quas officiis, sed deserunt aliquid, voluptas alias,',
-    '• Lorem ipsum dolor sit amet consectetur adipisicing elit. Est debitis cumque tempora, voluptate excepturi quas officiis, sed deserunt aliquid, voluptas alias,',
+    `• Personal image adjustment : Build a strong, authentic personal brand that matches your business' s values, advantages, and goals.`,
+    '• Clothing consultation : Be sure to choose clothing in a way that is consistent with the individual and the expectations of the business  environment. Evaluate your current clothing. Identify the main items of clothing that you must have.',
+    `• Take them shopping for clothes : Choosing a clothing store with the right collection Give advice on changing the shape and style of clothing.
+    Promote a confident and fun buying experience.`,
+    '• Improving communication skills : Objective: Improve both verbal and non-verbal communication skills to promote confidence, trustworthiness, and It’s profile, improving posture and positioning.',
+    '• Online management to establish identity : Managing and optimizing a person’s digital appearance for a positive and professional look. Social media content strategy Online image management',
+    '• Continuous improvement plan : Promote continuous improvement to suit your own changing context and professional environment. Regular self-assessment and feedback'
   ]
 
   const selectCouese = (e: any) => {
@@ -85,19 +87,22 @@ export default function Courses2() {
           <div className="max-w-[1200px] mx-auto mt-20 px-4 md:px-0">
             <div className="text-2xl md:text-[34px] font-bold didot">About</div>
             <div className="text-2xl md:text-3xl  text- mt-10 kanda">
-              <span className="text-2xl md:text-3xl font-bold pr-5 leading-10 kanda">"Present to Millons"</span>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia repudiandae voluptate assumenda et eius, quasi incidunt provident saepe illum aliquid reiciendis rerum quidem atque quia quas totam blanditiis at ex!
+              <span className="text-2xl md:text-3xl font-bold pr-3 leading-10 kanda">An "Executive Image Makeover"</span>
+              refers to a comprehensive process of refining and enhancing the professional image and presence of an individual in an executive or leadership role within an organization. The goal is to project a polished, credible, and influential image that aligns with the organization's values and the expectations of the professional world.
             </div>
             <div className="text-2xl md:text-3xl mt-14 kanda">
-              <span className="font-bold pr-5 kanda">"Present to Millons"</span>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia repudiandae voluptate assumenda et eius, quasi incidunt provident saepe illum aliquid reiciendis rerum quidem atque quia quas totam blanditiis at ex!
+              An Executive Image Makeover is the goal to empower executives to present themselves authentically, build a positive reputation, and effectively lead and influence within their professional sphere.
             </div>
             <hr className="mt-20 border-2"></hr>
 
             <div className="mt-20 text-xl md:text-3xl">
-              <div className="font-bold text-2xl md:text-3xl">Instruclors</div>
+              <div className="font-bold text-2xl md:text-4xl didot">Instruclors</div>
+              <div className="text-2xl md:text-3xl mt-5 kanda">Improving your look is a multifaceted process that is not limited to modifying your appearance. It is included in
+                the Strengthen various aspects of presentation and behavior to create a positive, authentic, and impactful
+                impression More Here are some key ways to improve your look
+              </div>
               {mockInstruclors.map((item: any, index: number) => (
-                <div key={index} className="mt-10 text-2xl kanda">{item}</div>
+                <div key={index} className="mt-10 text-2xl md:text-3xl kanda">{item}</div>
               ))}
             </div>
             <div className="bg-white mt-24 pb-20 px-4">
