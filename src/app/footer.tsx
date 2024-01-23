@@ -1,18 +1,20 @@
+import Image from 'next/image'
+
 export default function Footer() {
     return (
         <div className="w-full">
             <div className="max-w-[1366px] mx-auto z-30">
-                <div className="grid grid-cols-4">
+                <div className="grid md:grid-cols-4 px-4 md:px-0">
                     <div className="1">
                         <div className="text-2xl font-bold"> Phone</div>
                         <div className="text-xl mt-5">089-159-9379</div>
                     </div>
-                    <div className="2">
-                        <div className="text-2xl font-bold"> Phone</div>
+                    <div className="2 mt-10 md:mt-0">
+                        <div className="text-2xl font-bold"> Email</div>
                         <div className="text-xl mt-5">fonny.nia@gmail.com</div>
                     </div>
-                    <div className="3">
-                        <div className="text-2xl font-bold"> Phone</div>
+                    <div className="3 mt-10 md:mt-0">
+                        <div className="text-2xl font-bold">Follow me</div>
                         <div className="flex items-center gap-6 mt-5">
                             <a className="text-gray-700 hover:text-orange-600" aria-label="Visit TrendyMinds Facebook" href="" target="_blank"><svg
                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" className="h-8 text-white">
@@ -31,11 +33,13 @@ export default function Footer() {
                             <a className="text-gray-700 hover:text-orange-600" aria-label="Line"
                                 href="" target="_blank"
                             >
+                            <div className='border-2 py-2 text-sm px-1 border-white rounded-full text-white'>LINE</div>
                             </a>
                         </div>
                     </div>
-                    <div className="4">
-                        <div className="">© 2023 by pitchgmastery.com</div>
+                    <div className="4 mt-10 md:mt-0">
+                        <div className="">© 2023 by pitchgmastery.com
+                        </div>
                     </div>
                 </div>
             </div>
