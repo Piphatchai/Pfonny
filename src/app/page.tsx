@@ -293,7 +293,7 @@ export default function Home() {
       <div className='w-full pb-20 h-auto relative'>
         <div className='absolute inset-0 bg-black opacity-70 z-10'></div>
         <div className='max-w-[1366px] mx-auto text-white relative z-20'>
-          <div className='text-center text-[40px] font-bold pt-20 didot'>What Our Student Say</div>
+          <div className='text-center text-[40px] font-bold pt-20 didot'>Our Happy Customers</div>
           <div className='grid grid-cols-1 md:grid-cols-2 mt-20 gap-20'>
             <div className='relative'>
               <Image
