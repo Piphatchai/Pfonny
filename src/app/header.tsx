@@ -7,9 +7,9 @@ export default function Header() {
 
   useEffect(() => {
     const languageCheck = typeof localStorage !== 'undefined' ? localStorage.getItem("language") : null;
-    if(languageCheck) {
+    if (languageCheck) {
       setF(languageCheck)
-    }else{
+    } else {
       localStorage.setItem("language", 'EN');
       setF('EN')
     }
@@ -20,7 +20,7 @@ export default function Header() {
   const [showNavbar, setShowNavbar] = useState<boolean>(false)
 
   const [showLanguage, setShowLanguage] = useState<boolean>(false)
-  const [f,setF] = useState<string>('')
+  const [f, setF] = useState<string>('')
 
   const changeLanguage = (e: string) => {
     localStorage.setItem("language", e);
@@ -59,12 +59,24 @@ export default function Header() {
               </svg>
             </div>
             <div className={`${showNavbar ? "opacity-100" : "opacity-0"
-              } transition-opacity  duration-500 bg-white px-4 h-[200px] z-50  w-[50%] text-sm`}>
+              } transition-opacity  duration-500 bg-white px-4 h-[240px] z-50  w-[50%] text-sm`}>
               <div className="cursor-pointer text- pt-5"> <Link href="/" className={`${currentPath === '/' ? `text-blue-500 font-bold` : ``}`}>HOME</Link></div>
               <div className="cursor-pointer mt-3"><Link href="/about" className={`${currentPath === '/about' ? `text-blue-500 font-bold ` : ``}`}>ABOUT</Link></div>
               <div className="cursor-pointer mt-3"><Link href="/courses" className={`${currentPath === '/courses' ? `text-blue-500 font-bold` : ``}`}>COURSES</Link></div>
               <div className="cursor-pointer mt-3"><Link href="/contact" className={`${currentPath === '/contact' ? `text-blue-500 font-bold` : ``}`}>CONTACT</Link></div>
               <div className="cursor-pointer mt-3">Join us</div>
+              <div className='relative mt-3' onClick={() => { setShowLanguage(!showLanguage) }}>
+                <div className='flex space-x-3 items-center cursor-pointer'><svg className="h-6 w-6 text-blue-500" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" />  <circle cx="12" cy="12" r="9" />
+                  <line x1="3.6" y1="9" x2="20.4" y2="9" />  <line x1="3.6" y1="15" x2="20.4" y2="15" />  <path d="M11.5 3a17 17 0 0 0 0 18" />  <path d="M12.5 3a17 17 0 0 1 0 18" /></svg>
+                  <span>{f}</span>
+                </div>
+                <div className={`${showLanguage ? "opacity-100" : "opacity-0"} bg-white text-black  rounded-lg pb-5 cursor-pointer transition-opacity  
+                   duration-500 w-24 items-center flex flex-col absolute top-10`}>
+                  <div className='pt-5 hover:text-blue-500' onClick={() => { changeLanguage('EN') }}>EN</div>
+                  <div className='pt-5 hover:text-blue-500' onClick={() => { changeLanguage('TH') }}>TH</div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -98,12 +110,24 @@ export default function Header() {
                 </svg>
               </div>
               <div className={`${showNavbar ? "opacity-100" : "opacity-0"
-                } transition-opacity  duration-500 bg-white px-4 h-[200px] z-50  w-[50%] text-sm`}>
-                <div className="cursor-pointer text- pt-5"> <Link href="/" className={`${currentPath === '/' ? `text-blue-500 font-bold` : ``}`}>HOME</Link></div>
-                <div className="cursor-pointer mt-3"><Link href="/about" className={`${currentPath === '/about' ? `text-blue-500 font-bold ` : ``}`}>ABOUT</Link></div>
-                <div className="cursor-pointer mt-3"><Link href="/courses" className={`${currentPath === '/courses' ? `text-blue-500 font-bold` : ``}`}>COURSES</Link></div>
-                <div className="cursor-pointer mt-3"><Link href="/contact" className={`${currentPath === '/contact' ? `text-blue-500 font-bold` : ``}`}>CONTACT</Link></div>
+                } transition-opacity  duration-500 bg-white px-4 h-[240px] z-50  w-[50%] text-sm`}>
+                <div className="cursor-pointer text- pt-5"> <Link href="/" className={`${currentPath === '/' ? `text-blue-500 font-bold` : ``}`}>หน้าหลัก</Link></div>
+                <div className="cursor-pointer mt-3"><Link href="/about" className={`${currentPath === '/about' ? `text-blue-500 font-bold ` : ``}`}>เกี่ยวกับ</Link></div>
+                <div className="cursor-pointer mt-3"><Link href="/courses" className={`${currentPath === '/courses' ? `text-blue-500 font-bold` : ``}`}>คอร์ส</Link></div>
+                <div className="cursor-pointer mt-3"><Link href="/contact" className={`${currentPath === '/contact' ? `text-blue-500 font-bold` : ``}`}>ติดต่อเรา</Link></div>
                 <div className="cursor-pointer mt-3">Join us</div>
+                <div className='relative mt-3' onClick={() => { setShowLanguage(!showLanguage) }}>
+                  <div className='flex space-x-3 items-center cursor-pointer'><svg className="h-6 w-6 text-blue-500" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" />  <circle cx="12" cy="12" r="9" />
+                    <line x1="3.6" y1="9" x2="20.4" y2="9" />  <line x1="3.6" y1="15" x2="20.4" y2="15" />  <path d="M11.5 3a17 17 0 0 0 0 18" />  <path d="M12.5 3a17 17 0 0 1 0 18" /></svg>
+                    <span className=''>{f}</span>
+                  </div>
+                  <div className={`${showLanguage ? "opacity-100" : "opacity-0"} bg-white text-black  rounded-lg pb-5 cursor-pointer transition-opacity  
+                   duration-500 w-24 items-center flex flex-col absolute top-10`}>
+                    <div className='pt-5 hover:text-blue-500' onClick={() => { changeLanguage('EN') }}>EN</div>
+                    <div className='pt-5 hover:text-blue-500' onClick={() => { changeLanguage('TH') }}>TH</div>
+                  </div>
+                </div>
               </div>
             </div>
 
